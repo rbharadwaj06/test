@@ -1,0 +1,36 @@
+//
+// Elton Saul (eltons)
+//
+// This file contains the specification for the CClientFormatDataPacker class 
+// which is used to encode and decode format data for transmission over the wire.
+//
+// Copyright (c) Microsoft Corporation
+//
+
+#ifndef _H_CLIENTFORMATDATAPACK
+#define _H_CLIENTFORMATDATAPACK
+
+#include <fdpack.h>
+
+//
+// The primary task of the CClientFormatDataPacker is to encode and decode
+// format data for transmission over the wire. This class is the client
+// realization of the CFormatDataPacker class.
+//
+class CClientFormatDataPacker : public CFormatDataPacker
+{
+public:
+
+    CClientFormatDataPacker(
+        IN CFileClipAssistant* pFileClipAssistant
+        );
+
+    ~CClientFormatDataPacker();
+
+    HRESULT
+    Initialize();
+
+}; // CClientFormatDataPacker
+
+#endif // _H_CLIENTFORMATDATAPACK
+
