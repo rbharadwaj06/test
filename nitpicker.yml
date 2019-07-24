@@ -1,6 +1,6 @@
 branches:
-  - name: master
-  - name: official/*
+  - name: NitPickertest
+  - name: /*
   - name: user/rbharadwaj06/
     enabled: false
 comments:
