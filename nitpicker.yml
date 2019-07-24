@@ -6,7 +6,7 @@ branches:
 comments:
   - markdown: "# Header \n This applies to _everything_!"
     pathFilter:
-      - "/*.*"
+      - "**"
   - markdown: "Don't touch files in this path without talking to us!"
     blocking: true
     pathFilter:
